@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tiny Army World War</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <script src="static/jquery-3.5.1.min.js"></script>
+    <script src="static/parallax-3.1.0.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    
+
+    <meta property="og:image"
+        content="https://vivirenremoto.github.io/tiny_army/static/social.png">
+    <meta property="og:image:secure_url"
+        content="https://vivirenremoto.github.io/tiny_army/static/social.png">
+
+    <meta property="og:image:type" content="image/png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tiny Army World War">
+    <meta name="twitter:image"
+        content="https://vivirenremoto.github.io/tiny_army/static/social.png">
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            background: black;
+            margin: 50px;
+            padding: 0;
+            font-family: 'Special Elite', cursive, arial;
+            font-size: 20px;
+        }
+
+        .credits {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            color: white;
+            text-decoration: none;
+            z-index: 2;
+        }
+
+
+        .box {
+            width: 950px;
+            height: 622px;
+            margin:auto;
+            overflow: hidden;
+            margin-bottom:-70px;
+        }
+
+        .correction {
+            margin-left:-100px;
+            margin-top: -100px;
+        }
+
+        #scene img {
+            width: 1200px;
+            height: 746px;
+        }
+
+        @media screen and (min-width: 1000px) {
+            #scene img.front{
+                width: 1000px;
+                height: 600px;
+                margin-left: 50px;
+                margin-top: 130px;
+            }
+
+            
+            .preview_mobile{display:none;}
+        }
+
+        @media screen and (max-width: 900px) {
+          
+
+            .preview_mobile{display:block;max-width:100%;}
+            .box{display:none;}
+
+            .author {
+                left: 20px;
+            }
+
+        }
+    </style>
+
+
+    <a href="https://twitter.com/vivirenremoto" target="_blank" class="credits">by @vivirenremoto</a>
+
+
+    <img src="static/social.png" class="preview_mobile">
+
+    <div class="box">
+        
+
+        <div class="correction">
+
+            <div id="scene">
+
+                <div data-depth="0.8"><img src="static/back.png?"></div>
+                <div data-depth="0"><img src="static/front.png?" class="front"></div>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+    <div style="position:relative;font-size:25px;color:white;max-width:90%;width:950px;margin:auto;">
+        <h2>Bienvenido oficial</h2>
+
+        Soy el sargento Miquel y me encanta la saga Commandos.
+        <br><br>
+        Quién haya disfrutado este juego seguramente sienta nostalgia por el género ya que hoy en día no es tan popular como los shooters o fifas.
+        <br><br>
+        Commandos es un juego de estategia en el que controlas un grupo de soldados, donde tienes que superar misiones usando tu ingenio para aprovechar las habilidades únicas de cada soldado.
+        <br><br>
+        Como fan de la saga me gustaría revivir el género, pero no quiero limitarme a ser un clon, me gustaría hacer mi propia versión, aportar cosas nuevas a la jugabilidad y que se pueda jugar en PC y móviles.
+        <br><br>
+        Actualmente me encuentro desarrollando el juego a la vez que aprendo Unity3D, no tengo una fecha prevista de lanzamiento solo quiero disfrutar del camino y ver hasta donde puedo llegar.
+        
+
+        <br><br>
+
+        <h2>Imágenes y vídeos del desarrollo</h2>
+
+
+        <img src="static/1.jpg" style="width:560px;max-width:100%">
+        
+        <br><br>
+
+        <img src="static/2.jpg" style="width:560px;max-width:100%">
+        
+        <br><br>
+
+        <img src="static/3.jpg" style="width:560px;max-width:100%">
+        <br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s45kppKjg0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width:100%;"></iframe>
+
+        
+        <br><br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-PITnCPkQyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width:100%;"></iframe>
+        <br><br>
+
+        <h2>¿Te gusta lo que ves?</h2>
+        Sígueme en twitter para ver los progresos <a href="https://twitter.com/vivirenremoto" target="_blank" style="color:yellow">@vivirenremoto</a>.
+        
+    </div>
+
+
+
+
+    <script>
+        var screen_width = $(document).width();
+
+        if (screen_width > 500) {
+
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
