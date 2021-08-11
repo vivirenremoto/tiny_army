@@ -39,15 +39,7 @@
             font-size: 20px;
         }
 
-        .credits {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            color: white;
-            text-decoration: none;
-            z-index: 2;
-        }
-
+  
 
         .box {
             width: 950px;
@@ -68,6 +60,17 @@
         }
 
         @media screen and (min-width: 1000px) {
+
+           .credits {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                color: white;
+                text-decoration: none;
+                z-index: 2;
+            }
+
+
             #scene img.front{
                 width: 1000px;
                 height: 600px;
@@ -80,13 +83,21 @@
         }
 
         @media screen and (max-width: 900px) {
-          
+            body {margin: 20px;}
+
+
 
             .preview_mobile{display:block;max-width:100%;}
             .box{display:none;}
 
             .author {
                 left: 20px;
+            }
+
+            .credits {
+                
+                background:black;
+                text-align:center;
             }
 
         }
