@@ -1,4 +1,4 @@
-# Tiny Army World WarZelda Breath of the Wild - Parallax
+# Tiny Army World War
 
 [Web](https://vivirenremoto.github.io/tiny_army/)
 
