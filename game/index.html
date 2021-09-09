@@ -11,7 +11,7 @@
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
+        <div id="unity-logo" style="background-image:url('granada2.png')"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
@@ -23,11 +23,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/comm38.loader.js";
+      var loaderUrl = buildUrl + "/comm39.loader.js";
       var config = {
-        dataUrl: buildUrl + "/comm38.data",
-        frameworkUrl: buildUrl + "/comm38.framework.js",
-        codeUrl: buildUrl + "/comm38.wasm",
+        dataUrl: buildUrl + "/comm39.data",
+        frameworkUrl: buildUrl + "/comm39.framework.js",
+        codeUrl: buildUrl + "/comm39.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Tiny Army",
@@ -70,6 +70,7 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
+
         }).catch((message) => {
           alert(message);
         });
